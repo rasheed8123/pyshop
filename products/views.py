@@ -1,11 +1,32 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Product
+from .import templates
 
-def rash(request):
-    products = Product.objects.all()
-    return render(request,'rash.html',{'products': products})
+def plan(request):
+    return render(request,'plan.html')
 
-def ahm(request):
-    return HttpResponse('new prep')
+
+def contact(request):
+    return render(request,'contact.html')
+
+
+def about(request):
+    return render(request,'about.html')
+
+
+def career(request):
+    return render(request,'career.html')
+
+
+
+def haappylt(request):
+    return render(request,'haappylt.html')
+
+
+
+
+def haappy(request):
+    return render(request,'haappy.html')
+
 # Create your views here.
